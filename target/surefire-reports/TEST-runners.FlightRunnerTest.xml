@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="5" failures="1" name="runners.FlightRunnerTest" time="183.674" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.292-b10"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/sanjp/Cucumber/Make-My-Trip"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/sanjp/Cucumber/Make-My-Trip"/>
+    <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~20.04-b10"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/sanjp/Downloads/apache-maven-3.8.1-bin/apache-maven-3.8.1/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/home/sanjp/Downloads/apache-maven-3.8.1-bin/apache-maven-3.8.1/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="5.11.0-25-generic"/>
+    <property name="library.jansi.path" value="/home/sanjp/Downloads/apache-maven-3.8.1-bin/apache-maven-3.8.1/lib/jansi-native"/>
+    <property name="user.home" value="/home/sanjp"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="sanjp"/>
+    <property name="java.class.path" value="/home/sanjp/Downloads/apache-maven-3.8.1-bin/apache-maven-3.8.1/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_292"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="maven.home" value="/home/sanjp/Downloads/apache-maven-3.8.1-bin/apache-maven-3.8.1"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="Book flight" name="Books a flight #1" time="49.159"/>
+  <testcase classname="Book flight" name="Books a flight #2" time="38.795">
+    <failure message="expected:&lt;...hts from Chennai to [Kozhikode]&gt; but was:&lt;...hts from Chennai to [Bengaluru]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;...hts from Chennai to [Kozhikode]&gt; but was:&lt;...hts from Chennai to [Bengaluru]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinitions.BookFlightSteps.title_is(BookFlightSteps.java:73)
+	at ✽.title is &quot;Flights from Chennai to Bengaluru&quot;(file:///home/sanjp/Cucumber/Make-My-Trip/src/test/resources/features/BookFlight.feature:12)
+</failure>
+    <system-out>
+Scenario Outline: Books a flight                    &amp;#27;[90m# src/test/resources/features/BookFlight.feature:19&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser launch chrome browser&amp;#27;[0m                  &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_launch_chrome_browser()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser opens url &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;https://www.makemytrip.com/&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_opens_url(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser enters fromCity &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Chennai&quot;&amp;#27;[0m                &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_enters_from_city(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser enters ToCity &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Bengaluru&quot;&amp;#27;[0m                &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_enters_to_city(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser selects date of departure &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;20-08-2021&quot;&amp;#27;[0m   &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_selects_date_of_departure(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUsers selects senior citizen&amp;#27;[0m                  &amp;#27;[90m# stepDefinitions.BookFlightSteps.users_selects_senior_citizen()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser clicks on search&amp;#27;[0m                        &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_clicks_on_search()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mtitle is &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;Flights from Chennai to Bengaluru&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.BookFlightSteps.title_is(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: expected:&lt;...hts from Chennai to [Kozhikode]&gt; but was:&lt;...hts from Chennai to [Bengaluru]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinitions.BookFlightSteps.title_is(BookFlightSteps.java:73)
+	at ✽.title is &quot;Flights from Chennai to Bengaluru&quot;(file:///home/sanjp/Cucumber/Make-My-Trip/src/test/resources/features/BookFlight.feature:12)
+&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mUser selects Air India&amp;#27;[0m                       &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_selects_air_india()&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mFlight results are Air India&amp;#27;[0m                 &amp;#27;[90m# stepDefinitions.BookFlightSteps.flight_results_are_air_india()&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mUser closes the browser&amp;#27;[0m                       &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_closes_the_browser()&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 14818
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 11, 2021 1:13:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="Book flight" name="Select round trip" time="23.923"/>
+  <testcase classname="Book flight" name="Select multicity" time="50.372">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;premEcon&apos;]/div/div[1]/div/div/div[@class=&apos;fli-list-body-section&apos;]/div&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;5CG0262CXH&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-25-generic&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.LawXDd}, goog:chromeOptions: {debuggerAddress: localhost:40615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c686f294490e1db7100c2e505b1fd0fe
+*** Element info: {Using=xpath, value=//div[@id=&apos;premEcon&apos;]/div/div[1]/div/div/div[@class=&apos;fli-list-body-section&apos;]/div}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;premEcon&apos;]/div/div[1]/div/div/div[@class=&apos;fli-list-body-section&apos;]/div&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;5CG0262CXH&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-25-generic&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.LawXDd}, goog:chromeOptions: {debuggerAddress: localhost:40615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c686f294490e1db7100c2e505b1fd0fe
+*** Element info: {Using=xpath, value=//div[@id=&apos;premEcon&apos;]/div/div[1]/div/div/div[@class=&apos;fli-list-body-section&apos;]/div}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getText(Unknown Source)
+	at pageObjects.FlightsResultPage.getTrip1Details(FlightsResultPage.java:54)
+	at stepDefinitions.BookFlightSteps.user_should_see_trip1_details_as(BookFlightSteps.java:125)
+	at ✽.User should see trip1 details as &quot;New Delhi to Bengaluru&quot;(file:///home/sanjp/Cucumber/Make-My-Trip/src/test/resources/features/BookFlight.feature:41)
+</error>
+    <system-out>
+Scenario Outline: Select multicity                               &amp;#27;[90m# src/test/resources/features/BookFlight.feature:46&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser launch chrome browser&amp;#27;[0m                               &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_launch_chrome_browser()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser opens url &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;https://www.makemytrip.com/&quot;&amp;#27;[0m              &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_opens_url(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser enters fromCity &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Mumbai&quot;&amp;#27;[0m                              &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_enters_from_city(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser enters ToCity &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Delhi&quot;&amp;#27;[0m                                 &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_enters_to_city(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser selects date of departure &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;14-09-2021&quot;&amp;#27;[0m                &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_selects_date_of_departure(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser selects multicity&amp;#27;[0m                                     &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_selects_multicity()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser enters another from city &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Pune&quot;&amp;#27;[0m                       &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_enters_another_from_city(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser enters another to city &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Hyderabad&quot;&amp;#27;[0m                    &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_enters_another_to_city(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser selects date of departure &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;14-09-2021&quot;&amp;#27;[0m                &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_selects_date_of_departure(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser clicks on search&amp;#27;[0m                                     &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_clicks_on_search()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mUser should see trip1 details as &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;New Delhi to Bengaluru&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_should_see_trip1_details_as(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;premEcon&apos;]/div/div[1]/div/div/div[@class=&apos;fli-list-body-section&apos;]/div&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;5CG0262CXH&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-25-generic&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.LawXDd}, goog:chromeOptions: {debuggerAddress: localhost:40615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c686f294490e1db7100c2e505b1fd0fe
+*** Element info: {Using=xpath, value=//div[@id=&apos;premEcon&apos;]/div/div[1]/div/div/div[@class=&apos;fli-list-body-section&apos;]/div}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getText(Unknown Source)
+	at pageObjects.FlightsResultPage.getTrip1Details(FlightsResultPage.java:54)
+	at stepDefinitions.BookFlightSteps.user_should_see_trip1_details_as(BookFlightSteps.java:125)
+	at ✽.User should see trip1 details as &quot;New Delhi to Bengaluru&quot;(file:///home/sanjp/Cucumber/Make-My-Trip/src/test/resources/features/BookFlight.feature:41)
+&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mUser should see trip2Details as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Pune to Hyderabad&quot;&amp;#27;[0m       &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_should_see_trip2details_as(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mUser closes the browser&amp;#27;[0m                                    &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_closes_the_browser()&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 22728
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 11, 2021 1:14:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="(Same city error)" name="(Same city error)" time="21.425"/>
+</testsuite>

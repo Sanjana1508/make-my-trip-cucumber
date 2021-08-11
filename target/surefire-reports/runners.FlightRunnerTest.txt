@@ -1,0 +1,42 @@
+-------------------------------------------------------------------------------
+Test set: runners.FlightRunnerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 184.79 sec <<< FAILURE!
+Books a flight #2(Book flight)  Time elapsed: 38.795 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...hts from Chennai to [Kozhikode]> but was:<...hts from Chennai to [Bengaluru]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinitions.BookFlightSteps.title_is(BookFlightSteps.java:73)
+	at ✽.title is "Flights from Chennai to Bengaluru"(file:///home/sanjp/Cucumber/Make-My-Trip/src/test/resources/features/BookFlight.feature:12)
+
+Select multicity(Book flight)  Time elapsed: 50.372 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='premEcon']/div/div[1]/div/div/div[@class='fli-list-body-section']/div"}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '5CG0262CXH', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-25-generic', java.version: '1.8.0_292'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.LawXDd}, goog:chromeOptions: {debuggerAddress: localhost:40615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c686f294490e1db7100c2e505b1fd0fe
+*** Element info: {Using=xpath, value=//div[@id='premEcon']/div/div[1]/div/div/div[@class='fli-list-body-section']/div}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getText(Unknown Source)
+	at pageObjects.FlightsResultPage.getTrip1Details(FlightsResultPage.java:54)
+	at stepDefinitions.BookFlightSteps.user_should_see_trip1_details_as(BookFlightSteps.java:125)
+	at ✽.User should see trip1 details as "New Delhi to Bengaluru"(file:///home/sanjp/Cucumber/Make-My-Trip/src/test/resources/features/BookFlight.feature:41)
+
