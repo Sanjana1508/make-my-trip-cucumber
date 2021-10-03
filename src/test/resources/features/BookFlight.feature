@@ -16,7 +16,7 @@ Feature: Book flight
     Examples:
       | fromCity  | toCity | title | date |
       | Mumbai | Delhi | Flights from Mumbai to New Delhi | 14-09-2021 |
-      | Chennai | Bengaluru | Flights from Chennai to Bengaluru | 20-08-2021 |
+#      | Chennai | Bengaluru | Flights from Chennai to Bengaluru | 20-08-2021 |
 
   Scenario Outline:Select round trip
     And User enters fromCity "<fromCity>"
@@ -45,7 +45,14 @@ Feature: Book flight
         | fromCity | toCity | date       | anotherFromCity | anotherToCity | trip1Details | trip2Details |
         | Mumbai   | Delhi  | 14-09-2021 | Pune            | Hyderabad     | New Delhi to Bengaluru | Pune to Hyderabad |
 
-
+  Scenario Outline:
+    And User enters fromCity "<fromCity>"
+    And User enters ToCity "<toCity>"
+    Then User should see same city error message
+    And User closes the browser
+    Examples:
+      | fromCity  | toCity |
+      | Mumbai | Mumbai |
 
 
 

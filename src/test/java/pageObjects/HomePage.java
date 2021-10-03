@@ -86,10 +86,14 @@ public class HomePage {
     public void setFromCity(String fcity){
         waitHelper.waitForElement(fromCity,3000);
         fromCity.sendKeys(fcity);
+        waitHelper.waitForElement(autoSuggestive,2000);
         autoSuggestive.sendKeys(Keys.ARROW_DOWN,Keys.ENTER);
     }
-    public void setToCity(String tcity){
+    public void setToCity(String tcity) throws InterruptedException {
+        waitHelper.waitForElement(autoSuggestiveToCity,2000);
         autoSuggestiveToCity.sendKeys(tcity);
+       waitHelper.waitForElement(autoSuggestiveToCity,3000);
+       Thread.sleep(2000);
         autoSuggestiveToCity.sendKeys(Keys.ARROW_DOWN,Keys.ENTER);
     }
 
@@ -118,9 +122,11 @@ public class HomePage {
     public void clickAnotherCity(){
         anotherCity.click();
     }
-    public void setAnotherFromCity(String city){
+    public void setAnotherFromCity(String city) throws InterruptedException {
         clickAnotherCity();
+        waitHelper.waitForElement(anotherFromCityAutoSuggestive,3000);
         anotherFromCityAutoSuggestive.sendKeys(city);
+        Thread.sleep(2000);
         anotherFromCityAutoSuggestive.sendKeys(Keys.ARROW_DOWN,Keys.ENTER);
     }
     public void setAnotherToCity(String city) {

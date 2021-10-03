@@ -38,7 +38,7 @@ public class BookFlightSteps extends Base{
     }
 
     @When("User enters ToCity {string}")
-    public void user_enters_to_city(String toCity){
+    public void user_enters_to_city(String toCity) throws InterruptedException {
         homePage.setToCity(toCity);
     }
     @When("User selects date of departure {string}")
@@ -72,10 +72,9 @@ public class BookFlightSteps extends Base{
         driver.quit();
     }
     @When("User selects Air India")
-    public void user_selects_air_india() throws InterruptedException {
+    public void user_selects_air_india() {
 
         flightsResultPage.clickOnAirIndChkBox();
-        Thread.sleep(2000);
     }
     @Then("Flight results are Air India")
     public void flight_results_are_air_india() {
@@ -104,7 +103,7 @@ public class BookFlightSteps extends Base{
 
 
     @When("User enters another from city {string}")
-    public void user_enters_another_from_city(String city){
+    public void user_enters_another_from_city(String city) throws InterruptedException {
         homePage.setAnotherFromCity(city);
     }
     @When("User enters another to city {string}")

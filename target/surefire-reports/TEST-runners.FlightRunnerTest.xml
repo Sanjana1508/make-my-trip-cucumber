@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="1" name="runners.FlightRunnerTest" time="183.674" errors="1" skipped="0">
+<testsuite tests="5" failures="0" name="runners.FlightRunnerTest" time="42.915" errors="3" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -62,14 +62,135 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Book flight" name="Books a flight #1" time="49.159"/>
-  <testcase classname="Book flight" name="Books a flight #2" time="38.795">
-    <failure message="expected:&lt;...hts from Chennai to [Kozhikode]&gt; but was:&lt;...hts from Chennai to [Bengaluru]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;...hts from Chennai to [Kozhikode]&gt; but was:&lt;...hts from Chennai to [Bengaluru]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepDefinitions.BookFlightSteps.title_is(BookFlightSteps.java:73)
+  <testcase classname="Book flight" name="Books a flight #1" time="7.092">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(@class,&apos;DayPicker-NavButton--next&apos;)]&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;5CG0262CXH&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-25-generic&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.smw9Tv}, goog:chromeOptions: {debuggerAddress: localhost:36049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c67d550f1647711ff20da5428b4f160b
+*** Element info: {Using=xpath, value=//span[contains(@class,&apos;DayPicker-NavButton--next&apos;)]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(@class,&apos;DayPicker-NavButton--next&apos;)]&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;5CG0262CXH&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-25-generic&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.smw9Tv}, goog:chromeOptions: {debuggerAddress: localhost:36049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c67d550f1647711ff20da5428b4f160b
+*** Element info: {Using=xpath, value=//span[contains(@class,&apos;DayPicker-NavButton--next&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at utilities.DateHelper.pickDate(DateHelper.java:54)
+	at stepDefinitions.BookFlightSteps.user_selects_date_of_departure(BookFlightSteps.java:52)
+	at ✽.User selects date of departure &quot;14-09-2021&quot;(file:///home/sanjp/Cucumber/Make-My-Trip/src/test/resources/features/BookFlight.feature:9)
+</error>
+    <system-out>
+Scenario Outline: Books a flight                    &amp;#27;[90m# src/test/resources/features/BookFlight.feature:18&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser launch chrome browser&amp;#27;[0m                  &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_launch_chrome_browser()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser opens url &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;https://www.makemytrip.com/&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_opens_url(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser enters fromCity &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Mumbai&quot;&amp;#27;[0m                 &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_enters_from_city(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser enters ToCity &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Delhi&quot;&amp;#27;[0m                    &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_enters_to_city(java.lang.String)&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mUser selects date of departure &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;14-09-2021&quot;&amp;#27;[0m   &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_selects_date_of_departure(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(@class,&apos;DayPicker-NavButton--next&apos;)]&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;5CG0262CXH&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-25-generic&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.smw9Tv}, goog:chromeOptions: {debuggerAddress: localhost:36049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c67d550f1647711ff20da5428b4f160b
+*** Element info: {Using=xpath, value=//span[contains(@class,&apos;DayPicker-NavButton--next&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at utilities.DateHelper.pickDate(DateHelper.java:54)
+	at stepDefinitions.BookFlightSteps.user_selects_date_of_departure(BookFlightSteps.java:52)
+	at ✽.User selects date of departure &quot;14-09-2021&quot;(file:///home/sanjp/Cucumber/Make-My-Trip/src/test/resources/features/BookFlight.feature:9)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mUsers selects senior citizen&amp;#27;[0m                  &amp;#27;[90m# stepDefinitions.BookFlightSteps.users_selects_senior_citizen()&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mUser clicks on search&amp;#27;[0m                        &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_clicks_on_search()&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mtitle is &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Flights from Mumbai to New Delhi&quot;&amp;#27;[0m  &amp;#27;[90m# stepDefinitions.BookFlightSteps.title_is(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mUser selects Air India&amp;#27;[0m                       &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_selects_air_india()&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mFlight results are Air India&amp;#27;[0m                 &amp;#27;[90m# stepDefinitions.BookFlightSteps.flight_results_are_air_india()&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mUser closes the browser&amp;#27;[0m                       &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_closes_the_browser()&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 25938
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 12, 2021 9:02:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="Book flight" name="Books a flight #2" time="15.257">
+    <error message="stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;5CG0262CXH&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-25-generic&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.Nx3gxO}, goog:chromeOptions: {debuggerAddress: localhost:45901}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bc4ae885b19e092dc5aba3cb5ed9a87" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;5CG0262CXH&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-25-generic&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.Nx3gxO}, goog:chromeOptions: {debuggerAddress: localhost:45901}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bc4ae885b19e092dc5aba3cb5ed9a87
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy16.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at utilities.WaitHelper.waitForElement(WaitHelper.java:16)
+	at pageObjects.HomePage.getResultsTitle(HomePage.java:103)
+	at stepDefinitions.BookFlightSteps.title_is(BookFlightSteps.java:67)
 	at ✽.title is &quot;Flights from Chennai to Bengaluru&quot;(file:///home/sanjp/Cucumber/Make-My-Trip/src/test/resources/features/BookFlight.feature:12)
-</failure>
+</error>
     <system-out>
 Scenario Outline: Books a flight                    &amp;#27;[90m# src/test/resources/features/BookFlight.feature:19&amp;#27;[0m
   &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser launch chrome browser&amp;#27;[0m                  &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_launch_chrome_browser()&amp;#27;[0m
@@ -80,43 +201,73 @@ Scenario Outline: Books a flight                    &amp;#27;[90m# src/test/reso
   &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUsers selects senior citizen&amp;#27;[0m                  &amp;#27;[90m# stepDefinitions.BookFlightSteps.users_selects_senior_citizen()&amp;#27;[0m
   &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser clicks on search&amp;#27;[0m                        &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_clicks_on_search()&amp;#27;[0m
   &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mtitle is &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;Flights from Chennai to Bengaluru&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.BookFlightSteps.title_is(java.lang.String)&amp;#27;[0m
-      &amp;#27;[31morg.junit.ComparisonFailure: expected:&lt;...hts from Chennai to [Kozhikode]&gt; but was:&lt;...hts from Chennai to [Bengaluru]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepDefinitions.BookFlightSteps.title_is(BookFlightSteps.java:73)
+      &amp;#27;[31morg.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;5CG0262CXH&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-25-generic&apos;, java.version: &apos;1.8.0_292&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.Nx3gxO}, goog:chromeOptions: {debuggerAddress: localhost:45901}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bc4ae885b19e092dc5aba3cb5ed9a87
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy16.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at utilities.WaitHelper.waitForElement(WaitHelper.java:16)
+	at pageObjects.HomePage.getResultsTitle(HomePage.java:103)
+	at stepDefinitions.BookFlightSteps.title_is(BookFlightSteps.java:67)
 	at ✽.title is &quot;Flights from Chennai to Bengaluru&quot;(file:///home/sanjp/Cucumber/Make-My-Trip/src/test/resources/features/BookFlight.feature:12)
 &amp;#27;[0m
   &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mUser selects Air India&amp;#27;[0m                       &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_selects_air_india()&amp;#27;[0m
   &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mFlight results are Air India&amp;#27;[0m                 &amp;#27;[90m# stepDefinitions.BookFlightSteps.flight_results_are_air_india()&amp;#27;[0m
   &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mUser closes the browser&amp;#27;[0m                       &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_closes_the_browser()&amp;#27;[0m
 </system-out>
-    <system-err>Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 14818
+    <system-err>Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 30668
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Aug 11, 2021 1:13:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Aug 12, 2021 9:02:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
   </testcase>
-  <testcase classname="Book flight" name="Select round trip" time="23.923"/>
-  <testcase classname="Book flight" name="Select multicity" time="50.372">
-    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;premEcon&apos;]/div/div[1]/div/div/div[@class=&apos;fli-list-body-section&apos;]/div&quot;}
+  <testcase classname="Book flight" name="Select round trip" time="9.063"/>
+  <testcase classname="Book flight" name="Select multicity" time="5.655">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(@class,&apos;DayPicker-NavButton--next&apos;)]&quot;}
   (Session info: chrome=90.0.4430.212)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;5CG0262CXH&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-25-generic&apos;, java.version: &apos;1.8.0_292&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.LawXDd}, goog:chromeOptions: {debuggerAddress: localhost:40615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c686f294490e1db7100c2e505b1fd0fe
-*** Element info: {Using=xpath, value=//div[@id=&apos;premEcon&apos;]/div/div[1]/div/div/div[@class=&apos;fli-list-body-section&apos;]/div}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;premEcon&apos;]/div/div[1]/div/div/div[@class=&apos;fli-list-body-section&apos;]/div&quot;}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.05Ak8w}, goog:chromeOptions: {debuggerAddress: localhost:43589}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 22002bcbc1fd736487aacf9095ff2e60
+*** Element info: {Using=xpath, value=//span[contains(@class,&apos;DayPicker-NavButton--next&apos;)]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(@class,&apos;DayPicker-NavButton--next&apos;)]&quot;}
   (Session info: chrome=90.0.4430.212)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;5CG0262CXH&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-25-generic&apos;, java.version: &apos;1.8.0_292&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.LawXDd}, goog:chromeOptions: {debuggerAddress: localhost:40615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c686f294490e1db7100c2e505b1fd0fe
-*** Element info: {Using=xpath, value=//div[@id=&apos;premEcon&apos;]/div/div[1]/div/div/div[@class=&apos;fli-list-body-section&apos;]/div}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.05Ak8w}, goog:chromeOptions: {debuggerAddress: localhost:43589}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 22002bcbc1fd736487aacf9095ff2e60
+*** Element info: {Using=xpath, value=//span[contains(@class,&apos;DayPicker-NavButton--next&apos;)]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -131,12 +282,9 @@ Session ID: c686f294490e1db7100c2e505b1fd0fe
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.getText(Unknown Source)
-	at pageObjects.FlightsResultPage.getTrip1Details(FlightsResultPage.java:54)
-	at stepDefinitions.BookFlightSteps.user_should_see_trip1_details_as(BookFlightSteps.java:125)
-	at ✽.User should see trip1 details as &quot;New Delhi to Bengaluru&quot;(file:///home/sanjp/Cucumber/Make-My-Trip/src/test/resources/features/BookFlight.feature:41)
+	at utilities.DateHelper.pickDate(DateHelper.java:54)
+	at stepDefinitions.BookFlightSteps.user_selects_date_of_departure(BookFlightSteps.java:52)
+	at ✽.User selects date of departure &quot;14-09-2021&quot;(file:///home/sanjp/Cucumber/Make-My-Trip/src/test/resources/features/BookFlight.feature:35)
 </error>
     <system-out>
 Scenario Outline: Select multicity                               &amp;#27;[90m# src/test/resources/features/BookFlight.feature:46&amp;#27;[0m
@@ -144,22 +292,16 @@ Scenario Outline: Select multicity                               &amp;#27;[90m# 
   &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser opens url &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;https://www.makemytrip.com/&quot;&amp;#27;[0m              &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_opens_url(java.lang.String)&amp;#27;[0m
   &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser enters fromCity &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Mumbai&quot;&amp;#27;[0m                              &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_enters_from_city(java.lang.String)&amp;#27;[0m
   &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser enters ToCity &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Delhi&quot;&amp;#27;[0m                                 &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_enters_to_city(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser selects date of departure &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;14-09-2021&quot;&amp;#27;[0m                &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_selects_date_of_departure(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser selects multicity&amp;#27;[0m                                     &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_selects_multicity()&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser enters another from city &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Pune&quot;&amp;#27;[0m                       &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_enters_another_from_city(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser enters another to city &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Hyderabad&quot;&amp;#27;[0m                    &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_enters_another_to_city(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser selects date of departure &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;14-09-2021&quot;&amp;#27;[0m                &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_selects_date_of_departure(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser clicks on search&amp;#27;[0m                                     &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_clicks_on_search()&amp;#27;[0m
-  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mUser should see trip1 details as &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;New Delhi to Bengaluru&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_should_see_trip1_details_as(java.lang.String)&amp;#27;[0m
-      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;premEcon&apos;]/div/div[1]/div/div/div[@class=&apos;fli-list-body-section&apos;]/div&quot;}
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mUser selects date of departure &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;14-09-2021&quot;&amp;#27;[0m                &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_selects_date_of_departure(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(@class,&apos;DayPicker-NavButton--next&apos;)]&quot;}
   (Session info: chrome=90.0.4430.212)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;5CG0262CXH&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-25-generic&apos;, java.version: &apos;1.8.0_292&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.LawXDd}, goog:chromeOptions: {debuggerAddress: localhost:40615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c686f294490e1db7100c2e505b1fd0fe
-*** Element info: {Using=xpath, value=//div[@id=&apos;premEcon&apos;]/div/div[1]/div/div/div[@class=&apos;fli-list-body-section&apos;]/div}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.05Ak8w}, goog:chromeOptions: {debuggerAddress: localhost:43589}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 22002bcbc1fd736487aacf9095ff2e60
+*** Element info: {Using=xpath, value=//span[contains(@class,&apos;DayPicker-NavButton--next&apos;)]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -174,23 +316,26 @@ Session ID: c686f294490e1db7100c2e505b1fd0fe
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.getText(Unknown Source)
-	at pageObjects.FlightsResultPage.getTrip1Details(FlightsResultPage.java:54)
-	at stepDefinitions.BookFlightSteps.user_should_see_trip1_details_as(BookFlightSteps.java:125)
-	at ✽.User should see trip1 details as &quot;New Delhi to Bengaluru&quot;(file:///home/sanjp/Cucumber/Make-My-Trip/src/test/resources/features/BookFlight.feature:41)
+	at utilities.DateHelper.pickDate(DateHelper.java:54)
+	at stepDefinitions.BookFlightSteps.user_selects_date_of_departure(BookFlightSteps.java:52)
+	at ✽.User selects date of departure &quot;14-09-2021&quot;(file:///home/sanjp/Cucumber/Make-My-Trip/src/test/resources/features/BookFlight.feature:35)
 &amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mUser selects multicity&amp;#27;[0m                                     &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_selects_multicity()&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mUser enters another from city &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Pune&quot;&amp;#27;[0m                       &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_enters_another_from_city(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mUser enters another to city &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Hyderabad&quot;&amp;#27;[0m                    &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_enters_another_to_city(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mUser selects date of departure &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;14-09-2021&quot;&amp;#27;[0m                &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_selects_date_of_departure(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mUser clicks on search&amp;#27;[0m                                     &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_clicks_on_search()&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mUser should see trip1 details as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;New Delhi to Bengaluru&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_should_see_trip1_details_as(java.lang.String)&amp;#27;[0m
   &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mUser should see trip2Details as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Pune to Hyderabad&quot;&amp;#27;[0m       &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_should_see_trip2details_as(java.lang.String)&amp;#27;[0m
   &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mUser closes the browser&amp;#27;[0m                                    &amp;#27;[90m# stepDefinitions.BookFlightSteps.user_closes_the_browser()&amp;#27;[0m
 </system-out>
-    <system-err>Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 22728
+    <system-err>Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 29343
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Aug 11, 2021 1:14:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Aug 12, 2021 9:03:23 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
   </testcase>
-  <testcase classname="(Same city error)" name="(Same city error)" time="21.425"/>
+  <testcase classname="(Book flight)" name="(Book flight)" time="5.848"/>
 </testsuite>
